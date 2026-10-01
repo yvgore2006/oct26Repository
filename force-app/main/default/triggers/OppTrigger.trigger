@@ -46,5 +46,5 @@ trigger OppTrigger on Opportunity (after insert, after update, after delete, aft
     if(!accListToUpdate.isEmpty()){
         update accListToUpdate;
     }
-
+    //in this way opp trigger is pushed to git
 }
