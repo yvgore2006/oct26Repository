@@ -1,7 +1,7 @@
 // updated trigger deployed using manifest
 trigger AccountTrigger on Account (before delete, after update) {
     Set<Id> accIds = new Set<Id>();
-    
+    //Git test comment 28 Oct
     List<Account> accList = [Select id from Account where Id IN (Select AccountId FROM Contact)];
     
     for(Account acc: accList){        
